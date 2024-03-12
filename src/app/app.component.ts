@@ -16,7 +16,7 @@ export class AppComponent implements OnInit{
   title = 'Randomsena';
   constructor(private meta: Meta, private titleService: Title) {}
   ngOnInit(): void {
-    this.titleService.setTitle(this.title+'| Home');
+    this.titleService.setTitle(this.title+' | Home');
     this.meta.updateTag({ name: 'description', content: 'Combatting Anti Hindu Narrative | Forced 100+ Influencers to delete their Anti Hindu Posts | Got 63+ Adharmis arrested | Independent Hindutva Page' });
   }
 
