@@ -1,4 +1,34 @@
-
+@import '_mixins';
 .header-one .logo-area {
     padding: 5px 0;
 }
+
+.header-right{
+    @include mobile {
+        display: none;
+      }
+      @include tablet {
+        display: none;
+      }
+      @include mobile-xs {
+        display: none;
+      }
+  }
+
+  .logo{
+    @include mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      @include tablet {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      @include mobile-xs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  }
