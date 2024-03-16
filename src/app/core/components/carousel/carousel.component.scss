@@ -1,0 +1,39 @@
+
+@import "_mixins";
+.slide {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .random-div img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 700px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)); /* Adjust opacity for darkness */
+    @include desktop {
+        height: 550px;
+      }
+      @include mobile {
+        height: 450px;
+      }
+  }
+  
+  .carousel-caption {
+    position: absolute;
+    bottom: 40%;
+  }
+
+  .carousel-caption h3 {
+    color: #fff;
+    @include mobile {
+        line-height: 15px;
+    }
+  } 
+  .carousel-caption p {
+    color: #fff;
+    @include mobile {
+        line-height: 18px;  
+    }
+  }
+  
+ 

@@ -1,0 +1,15 @@
+<ngb-carousel [animation]="true" [pauseOnHover]="true" >
+    @for (slide of slides; track slide){
+        <ng-template ngbSlide >
+            <div class="picsum-img-wrapper">
+              <div class="random-div">
+                  <img src="{{slide?.img}}" alt="randomsena-slider">
+              </div>
+            </div>
+            <div  [@slideFromTop]  class="carousel-caption">
+              <h3 class="slide-sub-title">{{slide?.heading}}</h3>
+              <p [@slideIn] class="slide-title">{{slide?.description}}</p>
+            </div>
+          </ng-template>
+    }
+  </ngb-carousel>
