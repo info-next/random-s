@@ -1,0 +1,17 @@
+<div class="latest-post">
+    <div class="latest-post-media">
+      <a href="news-single.html" class="latest-post-img">
+          <img loading="lazy" class="img-fluid" src="{{blog?.image}}" alt="img">
+      </a>
+    </div>
+    <div class="post-body">
+      <h4 class="post-title">
+          <a href="news-single.html" class="d-inline-block">{{blog?.title}}</a>
+      </h4>
+      <div class="latest-post-meta">
+          <span class="post-item-date">
+            <i class="fa fa-clock-o"></i> {{blog?.date | date:'shortDate'}}
+          </span>
+      </div>
+    </div>
+</div>

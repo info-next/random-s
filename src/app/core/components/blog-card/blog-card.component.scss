@@ -1,0 +1,32 @@
+@import '_variables';
+.latest-post {
+    position: relative;
+  }
+  
+  .latest-post .image-angle:before {
+    border-bottom: 20px solid #f9f9f9;
+  }
+  
+  .latest-post .post-title {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    font-weight: 600;
+  }
+  
+  .latest-post .post-title a {
+    color: #303030;
+  }
+  
+  .latest-post .post-title a:hover {
+    color: $color-primary;
+  }
+  
+  .latest-post-meta {
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+  
+  .latest-post .post-body {
+    padding: 20px 0 5px;
+  }

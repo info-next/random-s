@@ -90,13 +90,13 @@
                 <div class="card">
                   <div class="card-header p-0 bg-transparent" id="headingOne">
                       <h2 class="mb-0">
-                        <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <button class="btn btn-block text-left" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                             Safety
                         </button>
                       </h2>
                   </div>
                 
-                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#our-values-accordion">
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#our-values-accordion">
                       <div class="card-body">
                         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidata
                       </div>
@@ -105,7 +105,7 @@
                 <div class="card">
                   <div class="card-header p-0 bg-transparent" id="headingTwo">
                       <h2 class="mb-0">
-                        <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <button class="btn btn-block text-left collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                             Customer Service
                         </button>
                       </h2>
@@ -119,7 +119,7 @@
                 <div class="card">
                   <div class="card-header p-0 bg-transparent" id="headingThree">
                       <h2 class="mb-0">
-                        <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <button class="btn btn-block text-left collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                             Integrity
                         </button>
                       </h2>
@@ -593,65 +593,15 @@
       <!--/ Title row end -->
   
       <div class="row">
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="latest-post">
-                <div class="latest-post-media">
-                  <a href="news-single.html" class="latest-post-img">
-                      <img loading="lazy" class="img-fluid" src="assets/images/news/news1.jpg" alt="img">
-                  </a>
-                </div>
-                <div class="post-body">
-                  <h4 class="post-title">
-                      <a href="news-single.html" class="d-inline-block">We Just Completes $17.6 million Medical Clinic in Mid-Missouri</a>
-                  </h4>
-                  <div class="latest-post-meta">
-                      <span class="post-item-date">
-                        <i class="fa fa-clock-o"></i> July 20, 2017
-                      </span>
-                  </div>
-                </div>
-            </div><!-- Latest post end -->
-          </div><!-- 1st post col end -->
-  
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="latest-post">
-                <div class="latest-post-media">
-                  <a href="news-single.html" class="latest-post-img">
-                      <img loading="lazy" class="img-fluid" src="assets/images/news/news2.jpg" alt="img">
-                  </a>
-                </div>
-                <div class="post-body">
-                  <h4 class="post-title">
-                      <a href="news-single.html" class="d-inline-block">Thandler Airport Water Reclamation Facility Expansion Project Named</a>
-                  </h4>
-                  <div class="latest-post-meta">
-                      <span class="post-item-date">
-                        <i class="fa fa-clock-o"></i> June 17, 2017
-                      </span>
-                  </div>
-                </div>
-            </div><!-- Latest post end -->
-          </div><!-- 2nd post col end -->
-  
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="latest-post">
-                <div class="latest-post-media">
-                  <a href="news-single.html" class="latest-post-img">
-                      <img loading="lazy" class="img-fluid" src="assets/images/news/news3.jpg" alt="img">
-                  </a>
-                </div>
-                <div class="post-body">
-                  <h4 class="post-title">
-                      <a href="news-single.html" class="d-inline-block">Silicon Bench and Cornike Begin Construction Solar Facilities</a>
-                  </h4>
-                  <div class="latest-post-meta">
-                      <span class="post-item-date">
-                        <i class="fa fa-clock-o"></i> Aug 13, 2017
-                      </span>
-                  </div>
-                </div>
-            </div><!-- Latest post end -->
-          </div><!-- 3rd post col end -->
+          
+            @for(blog of blogs | slice:0:3; track blog){
+              <div class="col-lg-4 col-md-6 mb-4">
+              <app-blog-card [blog]="blog"/>
+            </div>
+            }
+            
+         
+       
       </div>
       <!--/ Content row end -->
   
