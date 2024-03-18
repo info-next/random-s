@@ -43,13 +43,13 @@ export const slides: Slide[] = [
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.'
     },
     {
-      img: 'https://media.istockphoto.com/id/915681526/photo/bandra-worli-sea-link-mumbai.jpg?s=1024x1024&w=is&k=20&c=L5ZbPXc0iBCgz7zL6nP-Det8lXCLXeUxxBW8TBNPLVQ=',
-      heading: 'Project Heading',
+      img: 'https://picsum.photos/id/1043/900/500',
+      heading: 'Project ipsum dolor',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.'
     },
     {
-      img: 'https://media.istockphoto.com/id/915681490/photo/bandra-worli-sea-link-mumbai.jpg?s=1024x1024&w=is&k=20&c=owcMzn1YpOHO6JWAKoA2z1P5i3t5zHkqwVKE7inktro=',
-      heading: 'Project Heading',
+      img: 'https://picsum.photos/id/466/900/500',
+      heading: 'Adipiscing elit',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.'
     }
   ]
