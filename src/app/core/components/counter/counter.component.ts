@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-counter',
@@ -7,11 +7,5 @@ import { Component, Input, OnInit } from '@angular/core';
   templateUrl: './counter.component.html',
   styleUrl: './counter.component.scss'
 })
-export class CounterComponent implements OnInit{
-  @Input() projectData: any;
-ngOnInit(): void {
-  setTimeout(() => {
-    this.projectData.count++;
-  }, 1000); 
-}
+export class CounterComponent{
 }
