@@ -20,7 +20,7 @@ To get started with using this Angular 17 Bootstrap Theme in your project, follo
 1. **Clone the Repository**: Clone this repository to your local machine using the following command:
 
     ```
-    git clone https://github.com/info-next/A-17-bootstrap.git
+    git clone https://github.com/info-next/random-s.git
     ```
 
 2. **Install Dependencies**: Navigate to the cloned directory and install the necessary dependencies using npm:
