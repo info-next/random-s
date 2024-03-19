@@ -17,7 +17,7 @@ export class HomeComponent {
   slides: Slide[] = slides;
   blogs: BlogPost[] = dummyBlogs;
   metaTitle: string = 'Home | Randomsena';
-  ogUrl: string = 'https://random-s-info-nexts-projects.vercel.app';
+  ogUrl: string = 'https://random-s.vercel.app';
   ogImg: string = 'https://random-s-info-nexts-projects.vercel.app/assets/images/projects/project4.jpg';
   metaDesc: string = 'Combatting Anti Hindu Narrative | Forced 100+ Influencers to delete their Anti Hindu Posts | Got 63+ Adharmis arrested | Independent Hindutva Page';
   constructor(private seoService: SeoService) {
