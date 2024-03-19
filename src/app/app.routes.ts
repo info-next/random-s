@@ -7,4 +7,6 @@ export const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'about', component: AboutComponent },
     { path: 'contact', component: ContactComponent },
+    { path: 'blogs', loadComponent: () => import('./pages/blogs/blogs.component').then(m => m.BlogsComponent) },
+    { path: 'blog-detail', loadComponent: () => import('./pages/blogs/blog-detail/blog-detail.component').then(m => m.BlogDetailComponent) },
 ];

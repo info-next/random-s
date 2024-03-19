@@ -5,11 +5,12 @@ import { BlogCardComponent } from '../../core/components/blog-card/blog-card.com
 import { SlicePipe } from '@angular/common';
 import { CounterComponent } from '../../core/components/counter/counter.component';
 import { SeoService } from '../../core/services/seo.service';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CarouselComponent,BlogCardComponent,SlicePipe,CounterComponent],
+  imports: [CarouselComponent,BlogCardComponent,SlicePipe,CounterComponent,RouterModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

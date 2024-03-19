@@ -1,4 +1,4 @@
-# Angular 17 Bootstrap and Angular Animations 
+# Angular 17 Angular Animations - Bootstrap 5.3
 
 Welcome to the Angular 17 Bootstrap Theme repository! This repository contains a full version of a Bootstrap theme built specifically for Angular 17 applications. Whether you're starting a new project or looking to enhance an existing one, this theme provides a modern and customizable design to streamline your development process.
 

@@ -547,7 +547,7 @@
           
             @for(blog of blogs | slice:0:3; track blog){
               <div class="col-lg-4 col-md-6 mb-4">
-              <app-blog-card [blog]="blog"/>
+              <app-blog-card routerLink="/blog-detail" [blog]="blog"/>
             </div>
             }
             

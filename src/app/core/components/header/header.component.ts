@@ -4,11 +4,12 @@ import { LogoComponent } from '../logo/logo.component';
 import { slideInAnimation } from '../../models';
 import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgClass } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [TopBarComponent,NgbCollapseModule,LogoComponent,NgClass],
+  imports: [TopBarComponent,NgbCollapseModule,LogoComponent,NgClass,RouterModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
   animations: [slideInAnimation]
