@@ -12,11 +12,11 @@ import { FooterComponent, HeaderComponent } from './core/components';
   styleUrl: './app.component.scss'
 })
 export class AppComponent implements OnInit{
-  title = 'Randomsena';
+  title = 'Random App';
   constructor(private meta: Meta, private titleService: Title) {}
   ngOnInit(): void {
     this.titleService.setTitle(this.title+' | Home');
-    this.meta.updateTag({ name: 'description', content: 'Combatting Anti Hindu Narrative | Forced 100+ Influencers to delete their Anti Hindu Posts | Got 63+ Adharmis arrested | Independent Hindutva Page' });
+    this.meta.updateTag({ name: 'description', content: 'Angular 17 using bootstrap-5.3' });
   }
 
 }
